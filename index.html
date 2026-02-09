@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Web Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #6366f1;
+      --secondary: #0f172a;
+      --background: #f8fafc;
+      --text: #334155;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #818cf8);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: white;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: var(--secondary);
+    }
+
+    .cta {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      border-radius: 16px;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Beautiful Modern Web Design</h1>
+    <p>Create fast, responsive, and elegant websites using clean HTML and CSS.</p>
+    <a href="#" class="btn">Get Started</a>
+  </header>
+
+  <section>
+    <div class="features">
+      <div class="card">
+        <h3>Responsive Layout</h3>
+        <p>Looks great on mobile, tablet, and desktop using modern CSS grid.</p>
+      </div>
+
+      <div class="card">
+        <h3>Clean Code</h3>
+        <p>Simple, readable HTML and CSS following best practices.</p>
+      </div>
+
+      <div class="card">
+        <h3>Modern UI</h3>
+        <p>Soft shadows, smooth animations, and elegant typography.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Start Building Today</h2>
+    <p>Use this template as a base for your next project.</p>
+    <br />
+    <a href="#" class="btn">Download Template</a>
+  </section>
+
+  <footer>
+    © 2026 Your Company. All rights reserved.
+  </footer>
+
+</body>
+</html>
